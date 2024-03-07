@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+![logo](./src/images/logo.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr>
 
-## Available Scripts
+### Tópicos
 
-In the project directory, you can run:
+- [Descrição do projeto](#descrição-do-projeto)
 
-### `npm start`
+- [Funcionalidades](#funcionalidades)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Layout](#layout)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
 
-### `npm test`
+- [Acesso ao projeto](#acesso-ao-projeto)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-### `npm run build`
+- [Desenvolvedor](#desenvolvedor)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Descrição do projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="justify">
+  Projeto desenvolvido focando na lógica de um site e-commerce, fazendo toda a movimentação de adicionar itens ao carrinho, alterar sua quantidade, deletar itens, e calcular o valor total da compra. Também traz o produto com mais detalhes ao ser clicado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Faz o preenchimento dinâmico da lista de produtos na página principal, através do consumo de uma API fake, simulando uma API do Back-End.
+ 
+![layout página principal](./src/images/main_page.png)
 
-### `npm run eject`
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Funcionalidades
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:heavy_check_mark: `Funcionalidade 1:` Exposição de produtos na página home.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+:heavy_check_mark: `Funcionalidade 2:` Ao clicar no produto, é levado a página que o traz em detalhes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:heavy_check_mark: `Funcionalidade 3:` Página do carrinho, com toda a lógica para aumentar ou diminuir a quantidade de cada produto adicionado, e o valor sub total de cada produto.
 
-## Learn More
+:heavy_check_mark: `Funcionalidade 4:` Traz o valor total de todos os produtos adicionados no carrinho.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<div align="center">
+
+![layout página de produtos](./src/images/product_page.png)
+![layout página de adicionando ao carrinho](./src/images/toast_add.png)
+![layout página do carrinho](./src/images/cart_page.png)
+
+### Layout Responsivo
+
+<img style='width:200px;  margin-right: 20px' src='./src/images/responsive_1.png' alt='layout responsivo para celular'>   <img style='width:200px' src='./src/images/responsive_2.png' alt='layout responsivo para celular'>   <img style='width:200px' src='./src/images/responsive_3.png' alt='layout responsivo para celular'>
+
+  </div>
+
+###
+
+## Ferramentas utilizadas
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript" width="40" height="40"/>  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="html" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="html" width="40" height="40"/> 
+
+- React
+- Redux
+- TypeScript
+- JavaScript
+- HTML
+- Git
+- Styled-Components
+
+🎈 <i><b>OBS:</b></i> 
+
+O consumo da API fake foi feito através da biblioteca typicode/json-server, simulando uma API do Bck-End.
+
+Foi usado o ContextAPI para gerenciar os estados do carrinho, permitindo que se tenha acesso aos seus dados de uma forma global, podendo ser usado em qualquer página ou componente em que se faça uso do mesmo. Ainda no React foi feito uso da biblioteca react-hot-toast, para fornecer um feedback as ações dos usuários, proporcionando uma melhor experiência durante seu uso. Podendo também, ser aplicado as notificações geradas, um estilo e um comportamento personalizado.
+
+Para fazer o estilo do projeto, foi utilizado o TailwindCSS. Por se tratar de um projeto de estudo, o foco foi mantido na parte lógica de um e-commerce, e o TailwindCSS nos facilita, tornando mais ágil o processo de estilização, visto que não é uma aplicação grande e complexa.
+
+###
+
+## Acesso ao projeto
+
+Você pode <a href="https://e-commerce-cart-two.vercel.app/" target="_blank">acessar o site do projeto.</a>
+
+🎈 <i><b>OBS:</b></i> 
+
+Para uma melhor visualização do projeto, o aconselhado é que seja rodado através da porta local gerada pelo Vite, usando o terminal através do ```npm run dev``` ("http://localhost:5173/"), e em um segundo terminal seja rodado a API fake ```json-server --watch db.json```, para fazer o preenchimento do projeto com os produtos trazidos pela API.
+
+## Abrir e rodar o projeto
+
+```cmd
+# Clone este repositório
+git clone <link do repositório>
+
+# Acesse a pasta do projeto no seu terminal
+cd <nome do projeto>
+
+# Execute a aplicação
+npm start
+
+```
+
+## Desenvolvedor
+
+[<img src="./src/images/image_official.jpg" width=115><br><sub>Bruno Dias de Freitas</sub>](https://www.linkedin.com/in/brunodias-dev)
