@@ -72,6 +72,8 @@
 Foi utilizado o Redux para fazer o gerenciamento de estado da aplicação, evitando passar as propriedades por muitos componentes, visto que o projeto tem muitas páginas e componentes.
 O uso do Styled-Components resolve alguns problemas, como a repetição de códigos, visto que nos permite criar componentes reutilizáveis e compartilháveis, tornando manutenções e futuras mudanças mais simples.
 
+Fazendo a validação do formulário com useFormik e validationSchema e usando o InputMask para criar uma mascara nos campos de input.
+
 ###
 
 ## Figma do Projeto
@@ -90,6 +92,9 @@ git clone <link do repositório>
 
 # Acesse a pasta do projeto no seu terminal
 cd <nome do projeto>
+
+# Instalar dependências
+npm install
 
 # Execute a aplicação
 npm start
