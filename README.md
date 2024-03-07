@@ -12,6 +12,8 @@
 
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
+- [Figma do Projeto](#figma-do-projeto)
+
 - [Acesso ao projeto](#acesso-ao-projeto)
 
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
