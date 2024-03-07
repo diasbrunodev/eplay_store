@@ -96,4 +96,4 @@ npm start
 
 ## Desenvolvedor
 
-[<img src="./src/images/image_official.jpg" width=115><br><sub>Bruno Dias de Freitas</sub>](https://www.linkedin.com/in/brunodias-dev)
+[<img src="./src/assets/images/image_official.jpg" width=115><br><sub>Bruno Dias de Freitas</sub>](https://www.linkedin.com/in/brunodias-dev)
